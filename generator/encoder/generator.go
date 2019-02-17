@@ -20,7 +20,7 @@ func NewGenerator() Generator {
 	return &generator{}
 }
 
-// Generator writes the generated decoder to the writer.
+// Generate: Generator writes the generated decoder to the writer.
 func (g *generator) Generate(w io.Writer, f *ast.File) error {
 	// Ignore files without type specs.
 	if len(types(f)) == 0 {

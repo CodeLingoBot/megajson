@@ -178,7 +178,7 @@ func (w *Writer) WriteUint(v uint) error {
 	return w.WriteUint64(uint64(v))
 }
 
-// WriteUint encodes and writes an unsigned integer.
+// WriteUint64: encodes and writes an unsigned integer.
 func (w *Writer) WriteUint64(v uint64) error {
 	if err := w.check(); err != nil {
 		return err

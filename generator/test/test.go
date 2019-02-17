@@ -9,7 +9,7 @@ import (
 	"runtime"
 )
 
-// Sets up a Go project using a given fixture directory.
+// Test: Sets up a Go project using a given fixture directory.
 func Test(name string, fn func(string)) {
 	path, _ := ioutil.TempDir("", "")
 	os.RemoveAll(path)
